@@ -1,0 +1,7 @@
+# Ignore node modules
+frontend/node_modules/
+frontend/.env
+
+# Ignore Go build artifacts
+backend/*.exe
+backend/*.exe~
