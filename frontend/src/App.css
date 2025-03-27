@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f6f6ef;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #ff6600;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1 {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  display: inline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header nav {
+  display: inline;
+  margin-left: 20px;
+}
+
+header nav a, header nav span, header nav button {
+  color: white;
+  margin-right: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+header nav a:hover, header nav button:hover {
+  text-decoration: underline;
+}
+
+header nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.news-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+.news-item .meta {
+  font-size: 12px;
+  color: #828282;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  margin-right: 10px;
+}
+
+form input {
+  padding: 5px;
+  font-size: 14px;
+}
+
+form button {
+  padding: 5px 10px;
+  background-color: #ff6600;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form button:hover {
+  background-color: #e65c00;
 }
